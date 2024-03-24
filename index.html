@@ -31,17 +31,11 @@
   </head>
   <body>
     <!-- Ganti Audio di sini -->
-<!--     <audio
+   <audio
       src="https://audio.jukehost.co.uk/fO3312Gbgr4Nhcte4UjzGYZaMzfXBxLq"
       id="linkmp3"
       class="sembunyi"
-    ></audio> -->
-
-    <audio autoplay>
-      <source src="https://audio.jukehost.co.uk/fO3312Gbgr4Nhcte4UjzGYZaMzfXBxLq" class="sembunyi" type="audio/ogg">
-      <source src="https://audio.jukehost.co.uk/fO3312Gbgr4Nhcte4UjzGYZaMzfXBxLq" class="sembunyi" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    ></audio>
 
     <div id="bodyblur">
       <!-- Wallpaper --><img src="wp9.webp" id="wallpaper" />
@@ -105,7 +99,7 @@
 
       <!-- Pesan Tambahan -->
       <p id="katatambahan" class="sembunyi">
-        Gajadi deh soalnya kamu bau wleee 😜
+        Gajadi deh soalnya kamu belum mandi wleee 😜
       </p>
 
       <!-- Pesan Ditolak -->
@@ -163,22 +157,10 @@
       };
 
       async function inipesan() {
-        var { value: nama } = await swals.fire({
-          title: "Masukin Nama Kamu",
-          input: "Dewi Sri",
-        });
-        if (nama && nama.length < 11) {
-          window.nama = nama;
+          window.nama = "Dewi Sayang 😆❤️";
           vketikhalo = "Hai, " + nama + " ✨";
           mulainama();
-        } else {
-          await swals.fire(
-            "Ups!",
-            "Nama tidak boleh kosong atau lebih dari 10 karakter, ya!"
-          );
-          inipesan();
-        }
-      }
+	}
 
       //Variable Pertanyaan Akhir
       var tanya = "Mau Kado Gak Nih? 😶❤️";
